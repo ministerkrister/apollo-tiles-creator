@@ -174,13 +174,13 @@ namespace ApolloTilesCreator
             string outExt = Path.GetExtension(outputFile);
             string inExt = Path.GetExtension(inputFile);
             string[] ext = { ".png", ".bmp", ".jpg"};
+            if (!ext.Contains(inExt.ToLowerInvariant()) && !Utils.IsValidURI(inputFile))
+            {
+                throw new ApplicationException("Image source needs to be a png/jpg/bmp image file");
+            }
             if (outExt.ToLowerInvariant() != ".png")
             {
-                throw new ApplicationException("Outputfile needs to be a png image");
-            }
-            if (!ext.Contains(inExt.ToLowerInvariant()))
-            {
-                throw new ApplicationException("Input needs to be a png/jpg/bmp image file");
+                throw new ApplicationException("Image output needs to be a png image file");
             }
             Bitmap resFg;
             Bitmap resMask;
