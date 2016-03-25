@@ -5,3 +5,5 @@
 /ApolloTilesCreator/bin/Debug
 /ApolloTilesCreator/obj/Debug
 *.suo
+/ApolloTilesCreator/bin/Release
+/ApolloTilesCreator/obj/Release
