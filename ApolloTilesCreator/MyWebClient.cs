@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+
+namespace ApolloTilesCreator
+{
+    internal class MyWebClient : WebClient
+    {
+        internal bool HeadOnly { get; set; }
+
+        protected override WebRequest GetWebRequest(Uri address)
+        {
+            WebRequest req = base.GetWebRequest(address);
+            if (HeadOnly && req.Method == "GET")
+            {
+                req.Method = "HEAD";
+            }
+            return req;
+        }
+    }
+}

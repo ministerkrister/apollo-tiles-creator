@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ApolloTilesCreator/bin/Debug
+/ApolloTilesCreator/obj/Debug
+*.suo
