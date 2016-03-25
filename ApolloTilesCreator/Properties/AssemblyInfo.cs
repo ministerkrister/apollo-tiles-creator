@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ApolloTilesCreator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Apollo Tiles Creator")]
+[assembly: AssemblyDescription("A simple app generating tiles for the MediaPortal Apollo skin")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ApolloTilesCreator")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyProduct("Apollo Tiles Creator")]
+[assembly: AssemblyCopyright("GNU General Public License v3")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
